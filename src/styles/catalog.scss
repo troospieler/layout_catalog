@@ -5,9 +5,11 @@ $width-for-two: $product-width * 2 + $product-margin * 2;
 .catalog {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+
   margin: 0 auto;
   width: 100%;
-  justify-content: center;
+
   & > :nth-child(n) {
     margin: 0 24px 50px;
   }

@@ -1,38 +1,49 @@
-$small-font: 11px;
-
 .product {
   display: flex;
   flex-direction: column;
+
   padding: 15px 14px;
   width: $product-width;
+
   border: $border-color 1px solid;
   border-radius: 5px;
 
   &__picture {
-    align-self: center;
     width: 160px;
     height: 134px;
-    margin: 15px 0 45px;
+  }
 
-    transition: transform 1s, width 1s, height 1s;
+  &__picture-wrapper {
+    display: flex;
+    align-self: center;
+
+    margin-bottom: 30px;
+    padding: 12px 0;
+
+    border: 3px solid transparent;
+
+    transition: transform linear 1s;
 
     &:hover {
+      border-color: $border-color;
+
       transform: scale(1.2);
-      outline: 3px solid $border-color;
     }
   }
 
   &__heading {
+    margin-bottom: 5px;
+
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
-    margin-bottom: 5px;
   }
 
   &__id {
+    margin-bottom: 15px;
+
     font-weight: 400;
     font-size: $small-font;
-    margin-bottom: 15px;
   }
 
   &__price {
@@ -40,12 +51,15 @@ $small-font: 11px;
   }
 
   &__price-word {
-    padding-bottom: 1px;
-    text-transform: capitalize;
     align-self: flex-end;
+
+    padding-bottom: 1px;
+
     font-weight: 400;
     font-size: $small-font;
     line-height: 13px;
+
+    text-transform: capitalize;
   }
 
   &__price-result {
@@ -58,16 +72,19 @@ $small-font: 11px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     margin-bottom: 20px;
   }
 
   &__review-link {
     display: block;
-    text-transform: capitalize;
+
     font-weight: 400;
     font-size: $small-font;
     text-decoration: none;
     color: black;
+
+    text-transform: capitalize;
   }
 
   &__stars {
@@ -79,6 +96,7 @@ $small-font: 11px;
     width: 15px;
     height: 15px;
     margin-right: 4px;
+
     background: url("../images/star.svg") center no-repeat;
   }
 
@@ -93,7 +111,9 @@ $small-font: 11px;
     color: #fff;
     font-weight: 700;
     font-size: 14px;
+
     transition: 0.2s linear;
+
     &:hover {
       background-color: white;
       color: $active-color;

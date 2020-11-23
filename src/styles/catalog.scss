@@ -13,21 +13,3 @@ $width-for-two: $product-width * 2 + $product-margin * 2;
   margin: 0 auto;
   width: 100%;
 }
-
-// @media (max-width: $width-for-two) {
-//   .catalog {
-//     width: $width-for-two;
-//   }
-// }
-
-// @media (max-width: $width-for-three) {
-//   .catalog {
-//     grid-template-columns: repeat(4, auto);
-//   }
-// }
-
-// @media (min-width: $width-for-four) {
-//   .catalog {
-//     width: $width-for-four;
-//   }
-// }

@@ -1,5 +1,7 @@
 .header {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+
   justify-content: space-between;
   align-items: center;
 
@@ -15,7 +17,6 @@
   &__link {
     @include pic;
 
-    display: flex;
     margin-right: 10px;
 
     transition: transform 0.6s;

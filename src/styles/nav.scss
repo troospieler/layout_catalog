@@ -1,25 +1,28 @@
 .nav {
-  display: flex;
-
   height: $header-height;
   padding: 0;
   margin: 0;
 
   &__list {
-    display: flex;
-    flex-wrap: nowrap;
+    display: grid;
+    column-gap: 20px;
+    justify-items: end;
+
+    grid-template-columns: repeat(8, auto);
+
     list-style: none;
-    align-items: center;
 
     padding: 0;
+
+    & li {
+      display: inline-block;
+    }
   }
 
   &__link {
     display: flex;
     align-items: center;
-    position: relative;
 
-    margin-left: 20px;
     height: $header-height;
 
     font-weight: 500;

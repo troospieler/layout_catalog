@@ -3,32 +3,10 @@ $width-for-three: $product-width * 3 + $product-margin * 3;
 $width-for-two: $product-width * 2 + $product-margin * 2;
 
 .catalog {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  max-width: $width-for-four;
+  grid-template-columns: repeat(auto-fit, 200px);
+  gap: 50px 48px;
   justify-content: center;
-
   margin: 0 auto;
-  width: 100%;
-
-  & > :nth-child(n) {
-    margin: 0 24px 50px;
-  }
-}
-
-@media (min-width: $width-for-two) {
-  .catalog {
-    width: $width-for-two;
-  }
-}
-
-@media (min-width: $width-for-three) {
-  .catalog {
-    width: $width-for-three;
-  }
-}
-
-@media (min-width: $width-for-four) {
-  .catalog {
-    width: $width-for-four;
-  }
 }

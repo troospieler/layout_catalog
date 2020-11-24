@@ -1,5 +1,6 @@
 .nav {
   display: flex;
+
   height: $header-height;
   padding: 0;
   margin: 0;
@@ -9,40 +10,50 @@
     flex-wrap: nowrap;
     list-style: none;
     align-items: center;
+
     padding: 0;
   }
 
   &__link {
     display: flex;
     align-items: center;
-    height: $header-height;
     position: relative;
+
+    margin-left: 20px;
+    height: $header-height;
+
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
     text-decoration: none;
     text-transform: uppercase;
-    margin-left: 20px;
     color: #000;
+
+    transition: color 0.3s;
 
     &:hover {
       color: $active-color;
+      cursor: pointer;
     }
   }
 }
 
 .is-active {
   position: relative;
+
   margin-left: 0;
+
   color: $active-color;
 }
 
 .is-active::after {
-  position: absolute;
   content: "";
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  height: 4px;
+
   background-color: $active-color;
   border-radius: 8px;
-  height: 4px;
-  width: 100%;
-  bottom: 0;
 }

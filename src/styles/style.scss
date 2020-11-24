@@ -4,6 +4,7 @@ $header-height: 60px;
 $main-font: "Roboto", sans-serif;
 $product-width: 200px;
 $product-margin: 48px;
+$small-font: 11px;
 
 @mixin pic($header-height: 60px) {
   width: 40px;

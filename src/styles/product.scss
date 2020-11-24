@@ -22,7 +22,7 @@
 
     border: 3px solid transparent;
 
-    transition: transform linear 1s;
+    transition: transform linear 0.5s;
 
     &:hover {
       border-color: $border-color;
@@ -118,6 +118,7 @@
       background-color: white;
       color: $active-color;
       border-color: $active-color;
+      cursor: pointer;
     }
   }
 }
